@@ -16,31 +16,31 @@ namespace BitFrame\Locale;
  */
 class GeoLocationData extends \BitFrame\Data\ApplicationData
 {
-	/**
+    /**
      * {@inheritdoc}
-	 *
-	 * Note that this specific implementation 
-	 * makes this method immutable.
      *
-	 * @see: ApplicationData::offsetSet()
-	 *
-	 * @throws \BadMethodCallException
-	 */
-	public function offsetSet($key, $value)
+     * Note that this specific implementation 
+     * makes this method immutable.
+     *
+     * @see: ApplicationData::offsetSet()
+     *
+     * @throws \BadMethodCallException
+     */
+    public function offsetSet($key, $value)
     {
         throw new \BadMethodCallException(self::class . ' objects are immutable.');
     }
 
-	/**
+    /**
      * {@inheritdoc}
-	 *
-	 * Note that this specific implementation 
-	 * makes this method immutable.
      *
-	 * @see: ApplicationData::offsetUnset()
-	 *
-	 * @throws \BadMethodCallException
-	 */
+     * Note that this specific implementation 
+     * makes this method immutable.
+     *
+     * @see: ApplicationData::offsetUnset()
+     *
+     * @throws \BadMethodCallException
+     */
     public function offsetUnset($key)
     {
         throw new \BadMethodCallException(self::class . ' objects are immutable.');
